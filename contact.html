@@ -1,56 +1,53 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Contact | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+    <body>
+        <div class="wrapper">
+            
+            <header>
 
-<body>
+                <div id="header-cont">
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+                    <h1 id="name">Michael Hughes</h1>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
+                    <nav>
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
+                        <ul>
+                            <li><a href="index.html"> About </a></li>
+                            <li><a href="portfolio.html"> Portfolio </a></li>
+                            <li><a href="contact.html"> Contact </a></li>
+                        </ul>
 
-    </section>
+                    </nav>
 
-  </div>
+                </div>
 
-  <footer>
-    <div class="container">
-      Copyright &copy; 
-    </div>
-  </footer>
-</body>
+            </header>
+
+            <section>
+                <h1>Contact</h1>
+                <hr>
+                <form name="contactForm" action="mailto:youraddr@domain.tld" method="GET">
+                    <label for="namebox">Name</label><br>
+                    <input type="text" placeholder="John Smith" name="name" id="namebox"><br>
+                    <label for="emailbox">Email</label><br>
+                    <input type="email" placeholder="example@gmail.com" name="email" id="emailbox"><br>
+                    <label for="messagebox">Message</label><br>
+                    <textarea name="message" id="messagebox"></textarea><br>
+                    <input type="submit" value="Submit" id="submit">
+                </form>
+
+            </section>
+
+        </div>
+        
+        <footer>Copyright &copy;</footer>
+
+    </body>
 
 </html>
